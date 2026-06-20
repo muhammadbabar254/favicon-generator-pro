@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Generator Pro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <div class="logo">
+            <i class="fas fa-icons"></i>
+        </div>
+
+        <h1>Favicon Generator Pro</h1>
+
+        <p>
+            Upload an image and generate favicon sizes instantly
+        </p>
+
+    </div>
+
+    <div class="main-card">
+
+        <div class="upload-section">
+
+            <label for="imageInput" class="upload-box">
+
+                <i class="fas fa-cloud-upload-alt"></i>
+
+                <h3>Upload Logo or Image</h3>
+
+                <p>
+                    Click here to select an image
+                </p>
+
+            </label>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+                hidden
+            >
+
+        </div>
+
+        <div class="preview-section">
+
+            <h2>Original Preview</h2>
+
+            <img
+                id="imagePreview"
+                src=""
+                alt="Preview"
+                style="display:none;"
+            >
+
+            <div id="emptyPreview">
+
+                <i class="fas fa-image"></i>
+
+                <p>
+                    Image preview will appear here
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="favicon-section">
+
+            <h2>Generated Favicons</h2>
+
+            <div class="favicon-grid">
+
+                <div class="favicon-card">
+
+                    <h3>16 × 16</h3>
+
+                    <canvas id="favicon16"></canvas>
+
+                </div>
+
+                <div class="favicon-card">
+
+                    <h3>32 × 32</h3>
+
+                    <canvas id="favicon32"></canvas>
+
+                </div>
+
+                <div class="favicon-card">
+
+                    <h3>64 × 64</h3>
+
+                    <canvas id="favicon64"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="actions">
+
+            <button id="generateBtn">
+
+                <i class="fas fa-bolt"></i>
+
+                Generate Favicons
+
+            </button>
+
+            <button id="downloadBtn">
+
+                <i class="fas fa-download"></i>
+
+                Download 64x64
+
+            </button>
+
+            <button id="clearBtn">
+
+                <i class="fas fa-trash"></i>
+
+                Clear
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        © 2026 Favicon Generator Pro
+
+    </footer>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
